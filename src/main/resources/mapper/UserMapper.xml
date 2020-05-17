@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zcf.threadmodule.one.sms.dao.UserMapper">
+    <insert id="insert" parameterType="com.zcf.threadmodule.one.sms.pojo.User">
+        insert into t_user(name) values(#{name,jdbcType=VARCHAR})
+    </insert>
+</mapper>
