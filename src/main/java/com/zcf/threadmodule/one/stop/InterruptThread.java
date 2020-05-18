@@ -38,5 +38,7 @@ public class InterruptThread implements Runnable {
             e.printStackTrace();
         }
         t.interrupt();
+        //以下代码复位中断信号
+        Thread.interrupted();
     }
 }
