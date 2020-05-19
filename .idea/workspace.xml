@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6f9a4f6-7b84-412b-837a-a2f9b8761e37" name="Default Changelist" comment="">
+    <list default="true" id="f6f9a4f6-7b84-412b-837a-a2f9b8761e37" name="Default Changelist" comment="锁膨胀——重量级锁">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.LockExpand">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="AddSafe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zcf.threadmodule.two.safe.AddSafe" />
       <module name="ThreadModule" />
@@ -90,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlagStopThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zcf.threadmodule.one.stop.FlagStopThread" />
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zcf.threadmodule.two.threadnetwork.Client" />
       <module name="ThreadModule" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zcf.threadmodule.one.stop.*" />
+          <option name="PATTERN" value="com.zcf.threadmodule.two.threadnetwork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,8 +103,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InterruptThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zcf.threadmodule.one.stop.InterruptThread" />
+    <configuration name="FlagStopThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zcf.threadmodule.one.stop.FlagStopThread" />
       <module name="ThreadModule" />
       <extension name="coverage">
         <pattern>
@@ -140,17 +140,17 @@
       <item itemvalue="Application.AddSafe" />
       <item itemvalue="Application.ClassLayout" />
       <item itemvalue="Application.FlagStopThread" />
-      <item itemvalue="Application.InterruptThread" />
       <item itemvalue="Spring Boot.ThreadModuleApplication" />
       <item itemvalue="Application.LockExpand" />
+      <item itemvalue="Application.Client" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
         <item itemvalue="Application.LockExpand" />
         <item itemvalue="Application.ClassLayout" />
         <item itemvalue="Application.AddSafe" />
         <item itemvalue="Application.FlagStopThread" />
-        <item itemvalue="Application.InterruptThread" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +178,7 @@
       <updated>1589695627411</updated>
       <workItem from="1589695632429" duration="11260000" />
       <workItem from="1589801771873" duration="7725000" />
-      <workItem from="1589891030188" duration="1261000" />
+      <workItem from="1589891030188" duration="3598000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1589697690955</created>
@@ -208,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589817358465</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="锁膨胀——重量级锁">
+      <created>1589894965429</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589894965430</updated>
+    </task>
+    <task id="LOCAL-00006" summary="锁膨胀——重量级锁">
+      <created>1589895052637</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589895052637</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +286,8 @@
     <MESSAGE value="线程优化短信发送场景" />
     <MESSAGE value="线程关闭方式" />
     <MESSAGE value="线程安全及内存布局/classLayout" />
-    <option name="LAST_COMMIT_MESSAGE" value="线程安全及内存布局/classLayout" />
+    <MESSAGE value="锁膨胀——重量级锁" />
+    <option name="LAST_COMMIT_MESSAGE" value="锁膨胀——重量级锁" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Project_Structure" timestamp="1589894924074">
@@ -283,14 +298,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589891177640" />
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1589807110841">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1589906899519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589807110841" />
-    <state x="278" y="60" width="1276" height="952" key="CommitChangelistDialog2" timestamp="1589894963750">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589906899519" />
+    <state x="278" y="60" width="1276" height="952" key="CommitChangelistDialog2" timestamp="1589895063104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="278" y="60" width="1276" height="952" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589894963750" />
+    <state x="278" y="60" width="1276" height="952" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589895063104" />
     <state x="0" y="92" width="1536" height="859" maximized="true" key="DiffContextDialog" timestamp="1589704621974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -303,22 +318,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="748" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589697364211" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1589894905472">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1589907472334">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589894905472" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1589894905472">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589907472334" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1589907472334">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589894905472" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1589894905472">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589907472334" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1589907472334">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589894905472" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1589894905472">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589907472334" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1589907472334">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589894905472" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589907472334" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1589731575928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -339,10 +354,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1589696812414" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1589895002396">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1589895081367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589895002396" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589895081367" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1589891030214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
