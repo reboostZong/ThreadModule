@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6f9a4f6-7b84-412b-837a-a2f9b8761e37" name="Default Changelist" comment="锁膨胀——重量级锁">
+    <list default="true" id="f6f9a4f6-7b84-412b-837a-a2f9b8761e37" name="Default Changelist" comment="volatile相关">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zcf/threadmodule/work/DCLDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zcf/threadmodule/three/question/CountPlus.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/zcf/threadmodule/two/threadnetwork/Client.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/zcf/threadmodule/two/threadnetwork/Consumer.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/zcf/threadmodule/two/threadnetwork/Producter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zcf/threadmodule/work/DCLDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zcf/threadmodule/work/SynchronizedDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +187,7 @@
       <workItem from="1589801771873" duration="7725000" />
       <workItem from="1589891030188" duration="3812000" />
       <workItem from="1590151732341" duration="3522000" />
-      <workItem from="1590218565257" duration="2283000" />
+      <workItem from="1590218565257" duration="4154000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1589697690955</created>
@@ -234,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589907572673</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="volatile相关">
+      <created>1590243113566</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590243113566</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +311,8 @@
     <MESSAGE value="线程安全及内存布局/classLayout" />
     <MESSAGE value="锁膨胀——重量级锁" />
     <MESSAGE value="线程间通信wait notify" />
-    <option name="LAST_COMMIT_MESSAGE" value="线程间通信wait notify" />
+    <MESSAGE value="volatile相关" />
+    <option name="LAST_COMMIT_MESSAGE" value="volatile相关" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Project_Structure" timestamp="1589894924074">
@@ -319,10 +331,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="226" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1590152611519" />
-    <state x="297" y="22" width="1276" height="952" key="CommitChangelistDialog2" timestamp="1590243085460">
+    <state x="297" y="22" width="1276" height="952" key="CommitChangelistDialog2" timestamp="1590243111353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="297" y="22" width="1276" height="952" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590243085460" />
+    <state x="297" y="22" width="1276" height="952" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590243111353" />
     <state width="416" height="466" key="DebuggerActiveHint" timestamp="1590152576875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -339,22 +351,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="748" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589697364211" />
-    <state width="1877" height="137" key="GridCell.Tab.0.bottom" timestamp="1590220844433">
+    <state width="1877" height="137" key="GridCell.Tab.0.bottom" timestamp="1590244079271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="137" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590220844433" />
-    <state width="1877" height="137" key="GridCell.Tab.0.center" timestamp="1590220844433">
+    <state width="1877" height="137" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590244079271" />
+    <state width="1877" height="137" key="GridCell.Tab.0.center" timestamp="1590244079270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="137" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590220844433" />
-    <state width="1877" height="137" key="GridCell.Tab.0.left" timestamp="1590220844433">
+    <state width="1877" height="137" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590244079270" />
+    <state width="1877" height="137" key="GridCell.Tab.0.left" timestamp="1590244079270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="137" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590220844433" />
-    <state width="1877" height="137" key="GridCell.Tab.0.right" timestamp="1590220844433">
+    <state width="1877" height="137" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590244079270" />
+    <state width="1877" height="137" key="GridCell.Tab.0.right" timestamp="1590244079271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="137" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590220844433" />
+    <state width="1877" height="137" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590244079271" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1590166698869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -375,10 +387,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1589696812414" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1589907586597">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1590243121647">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589907586597" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590243121647" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1590218564973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
